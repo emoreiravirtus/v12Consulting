@@ -1,4 +1,18 @@
 {
   "equations": [
+    {
+      "userName": "Elias Moreira",
+      "equation": "32/33",
+      "time": 1628635311811,
+      "result": "0.9696969696969697",
+      "id": 1
+    },
+    {
+      "userName": "Elias Moreira",
+      "equation": "3-66/2",
+      "time": 1628635346477,
+      "result": "-30",
+      "id": 2
+    }
   ]
 }

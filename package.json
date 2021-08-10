@@ -14,8 +14,8 @@
   },
   "scripts": {
     "test": "test",
-    "no-db": "http-server .",
-    "with-db": "concurrently \"http-server .\" \"node ./js/server/server.js\""
+    "no-db": "concurrently \" http-server . \" \" start http://localhost:8080 \"",
+    "with-db": "concurrently \"http-server .\" \"node ./js/server/server.js\" \" start http://localhost:8080 \""
   },
   "repository": {
     "type": "git",
