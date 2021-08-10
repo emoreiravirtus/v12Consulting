@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="load">
+        <div id="load-icon"></div>
+    </div>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href='#'>Calculator</a></li>
+            <li><a href='./history.html'>History</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Wrapper -->
+    <div class='container'>
+
+        <form action="#">
+
+        <!-- User name -->
+        <div class='user-name-container'>
+            User:
+            <input type='text' name='userName' maxlength='17'>
+        </div>
+
+        <!-- Equation -->
+        <div class='equation-container'>
+            <p class='equation'>0</p>
+        </div>
+
+        <!-- Result -->
+        <div class='result-container'>
+            <p class='result'></p>
+        </div>
+
+        <!-- Buttons Wrapper -->
+        <div class='buttons-wrapper'>
+
+            <!-- Numbers -->
+            <div class='numbers-wrapper'>
+                <button type="button" data-number='7'>7</button>
+                <button type="button" data-number='8'>8</button>
+                <button type="button" data-number='9'>9</button>
+                <button type="button" data-number='4'>4</button>
+                <button type="button" data-number='5'>5</button>
+                <button type="button" data-number='6'>6</button>
+                <button type="button" data-number='1'>1</button>
+                <button type="button" data-number='2'>2</button>
+                <button type="button" data-number='3'>3</button>
+                <button type="button" data-number='0'>0</button>
+                <button type="button" data-number='10'>.</button>
+                <button type="button" class='equalButton'>=</button>
+            </div>
+
+            <!-- Math operators -->
+            <div class='operators-wrapper'>
+                <button type="button" data-operator='0'>+</button>
+                <button type="button" data-operator='1'>-</button>
+                <button type="button" data-operator='2'>/</button>
+                <button type="button" data-operator='3'>*</button>
+            </div>
+
+            <!-- Delete buttons -->
+            <div class='delete-wrapper'>
+                <button type="button" class='clearButton'>Clear</button>
+                <button type="button" data-number='11'>⌫</button>
+            </div>
+
+        </div>
+        </form>
+    </div>
+
+    
+
+    <!-- Tooltips -->
+    <div class='tooltip'>
+        Autosave status:
+        <p class='success'>working</p>
+        <p class='error'>not working <span class="trySaveAgain">try again</span></p>
+    </div>
+
+    <script type='module' src='./index.js'></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "v12consulting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.2.1",
+    "ejs": "^3.1.6",
+    "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "http-server": "^13.0.0"
+  },
+  "scripts": {
+    "test": "test",
+    "no-db": "http-server .",
+    "with-db": "concurrently \"http-server .\" \"node ./js/server/server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emoreiravirtus/v12Consulting.git"
+  },
+  "author": "Elias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emoreiravirtus/v12Consulting/issues"
+  },
+  "homepage": "https://github.com/emoreiravirtus/v12Consulting#readme"
+}

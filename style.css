@@ -1,0 +1,287 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+/* Variables */
+:root {
+
+    /* Colors */
+    --primary-color: #797979;
+    --secondary-color: #423e3e;
+    --tertiary-color: #272727;
+    --font-color: #555555;
+    --success-color: #4eaa62;
+    --error-color: #9c2b3a;
+    --white-color: #fafafa;
+    --black-color: #3a3a3a;
+    --gray-color: #cacaca;
+
+    /* Fonts */
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Source Sans Pro', sans-serif;
+
+}
+
+/* General */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white-color);
+}
+
+/* Nav */
+nav {
+    width: 100%;
+    text-align: center;
+    font-family: var(--secondary-font);
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--tertiary-color));
+    box-shadow: 2px 0 12px var(--primary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: unset;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0.5rem;
+    display: inline-block;
+    margin: 0.3rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    box-shadow: none;
+    transition: all 0.5s;
+}
+
+nav ul li:hover {
+    background-color: var(--white-color);
+    color: var(--font-color);
+    transform: scale(0.9) translateY(-4px);
+    box-shadow: 3px 0 15px var(--black-color);
+}
+
+/* Container */
+.container {
+    margin: 1rem auto;
+    display: flex;
+    border-radius: 9px;
+    box-shadow: 2px 0 13px var(--gray-color);
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 500px;
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    position: relative;
+}
+
+table {
+    font-family: var(--primary-font);
+}
+
+#load {
+    position: absolute;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--tertiary-color));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    transition: all 1s;
+}
+
+#load-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+    background: #136a8a;
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);
+    background: linear-gradient(to right, #267871, #136a8a);
+    animation: 1s load infinite;
+}
+
+/* Equation */
+.equation-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 79px;
+}
+
+.equation-container .equation {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    color: var(--gray-color);
+    margin: 0;
+}
+
+/* Buttons Wrapper */
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.buttons-wrapper button {
+    width: 85px;
+    padding: .4rem;
+    margin: 0 .2rem;
+    cursor: pointer;
+    border: 1px solid var(--gray-color);
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.buttons-wrapper button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+/* Numbers Wrapper */
+.numbers-wrapper {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    max-width: 300px;
+}
+
+/* Operators Wrapper */
+.operators-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.operators-wrapper button {
+    width: 35px;
+    margin: 0.1rem;
+    border-radius: 10px;
+}
+
+/* Delete Wrapper */
+
+    @media screen and (min-width: 700px) {
+        .delete-wrapper {
+        	width: 70px;
+        }
+    }
+
+
+/* User Name */
+.user-name-container {
+    display: flex;
+    justify-content: start;
+    padding: 0 79px;
+    margin: 1rem 0;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.user-name-container input {
+    border: 1px solid var(--white-color);
+    border-radius: 14px;
+    padding: .1rem .5rem;
+    margin-left: .3rem;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    background-color: var(--white-color);
+}
+
+.user-name-container input:focus {
+    outline: none;
+}
+
+.user-name-container input:hover {
+    border: 1px solid var(--gray-color);
+}
+
+/* Result */
+.result-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 79px;
+}
+
+.result-container .result {
+    font-weight: 600;
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    color: var(--font-color);
+    margin: 0 0 1rem 0;
+}
+
+/* Tooltip */
+.tooltip {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    color: var(--font-color);
+    font-family: var(--primary-font);
+}
+
+.tooltip > p {
+    color: var(--white-color);
+    padding: 0.2rem 1rem;
+    border-radius: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.tooltip .success {
+    background-color: var(--success-color);
+    box-shadow: 0 0 10px var(--success-color);
+}
+
+.tooltip .error {
+    background-color: var(--error-color);
+    box-shadow: 0 0 10px var(--error-color);
+}
+
+.tooltip .error > span {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: .2rem 1rem;
+    font-size: 14px;
+    border-radius: 2px;
+    transition: 0.2s all;
+    margin-left: 0.4rem;
+}
+
+.tooltip .error > span:hover {
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 12px;
+    box-shadow: 3px 0 15px var(--black-color);
+}
+
+/* Table */
+table {
+    text-align: center;
+}
+
+th {
+    font-family: var(--primary-font);
+}
+
+tr {
+    font-family: var(--secondary-font);
+}
+
+tr:nth-child(even) {
+    background-color: var(--gray-color);
+    color: var(--white-color);
+}
+
+@keyframes load {
+    0% { border-radius: 3px; transform: scale(1);}
+    50% { border-radius: 50px; transform: scale(0.2) rotate(360deg);}
+    100% { border-radius: 3px; transform: scale(1);}
+}
