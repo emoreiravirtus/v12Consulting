@@ -13,6 +13,132 @@
       "time": 1628635346477,
       "result": "-30",
       "id": 2
+    },
+    {
+      "userName": "Incognito",
+      "equation": "23/52",
+      "time": 1638903627039,
+      "result": "0.4423076923076923",
+      "id": 3
+    },
+    {
+      "userName": "Elias",
+      "equation": "2.3",
+      "time": 1638903656390,
+      "result": "2.3",
+      "id": 4
+    },
+    {
+      "userName": "Elias",
+      "equation": "0-52",
+      "time": 1638903666582,
+      "result": "-52",
+      "id": 5
+    },
+    {
+      "userName": "Elias",
+      "equation": "123*52",
+      "time": 1638903673510,
+      "result": "6396",
+      "id": 6
+    },
+    {
+      "userName": "Elias",
+      "equation": "85/523",
+      "time": 1638903680455,
+      "result": "0.16252390057361377",
+      "id": 7
+    },
+    {
+      "userName": "Elias",
+      "equation": "526/32",
+      "time": 1638903691767,
+      "result": "16.4375",
+      "id": 8
+    },
+    {
+      "userName": "Elias",
+      "equation": "0-52",
+      "time": 1638903700278,
+      "result": "-52",
+      "id": 9
+    },
+    {
+      "userName": "Elias",
+      "equation": "23/62",
+      "time": 1638903901017,
+      "result": "0.3709677419354839",
+      "id": 10
+    },
+    {
+      "userName": "Elias",
+      "equation": "23-62",
+      "time": 1638904051591,
+      "result": "-39",
+      "id": 11
+    },
+    {
+      "userName": "Elias",
+      "equation": "23/6",
+      "time": 1638904085945,
+      "result": "3.8333333333333335",
+      "id": 12
+    },
+    {
+      "userName": "Incognito",
+      "equation": "5/3",
+      "time": 1638904181582,
+      "result": "1.6666666666666667",
+      "id": 13
+    },
+    {
+      "userName": "Incognito",
+      "equation": "1.666666666666666-85/6",
+      "time": 1638904190782,
+      "result": "-12.5",
+      "id": 14
+    },
+    {
+      "userName": "Incognito",
+      "equation": "-12.5+85",
+      "time": 1638904197134,
+      "result": "72.5",
+      "id": 15
+    },
+    {
+      "userName": "Incognito",
+      "equation": "72.5+526",
+      "time": 1638904202910,
+      "result": "598.5",
+      "id": 16
+    },
+    {
+      "userName": "Incognito",
+      "equation": "23/6",
+      "time": 1638904284143,
+      "result": "3.8333333333333335",
+      "id": 17
+    },
+    {
+      "userName": "Incognito",
+      "equation": "3.83333333333333355+874",
+      "time": 1638904294399,
+      "result": "877.8333333333334",
+      "id": 18
+    },
+    {
+      "userName": "Incognito",
+      "equation": "877.83333333333345-56",
+      "time": 1638904351199,
+      "result": "821.8333333333335",
+      "id": 19
+    },
+    {
+      "userName": "Incognito",
+      "equation": "65/3",
+      "time": 1638904360518,
+      "result": "21.666666666666668",
+      "id": 20
     }
   ]
 }

@@ -211,6 +211,7 @@ export class Board {
         let objectToDeal = this.getObjectToDeal();
 
         this.result.innerHTML = this.solveEquation( objectToDeal.equation );
+        this.equation.innerHTML = objectToDeal.result;
 
         objectToDeal = {
             ...objectToDeal,
@@ -237,8 +238,6 @@ export class Board {
                 this.successTooltip.style.display = 'none';
             }
         )
-
-        this.equation.innerHTML = '0';
 
     }
 
